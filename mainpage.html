@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>GameTopia</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            background-image: linear-gradient(to bottom, rgba(255, 0, 136, 0.79), rgb(147, 108, 255));
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        header {
+            background-color: #333;
+            padding: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100px;
+            background-image: url('headback.jpeg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+
+        .logo img {
+            max-width: 100%;
+            height: 90%;
+        }
+
+        .navbar {
+            display: flex;
+            align-items: center;
+        }
+
+        input[type="text"] {
+            padding: 8px;
+            margin-right: 5px;
+        }
+
+        button {
+            padding: 8px 12px;
+            background-color: #0000FF;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0000FF;
+        }
+
+        .main-content {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            align-items: center;
+            padding: 20px;
+            margin: 20px;
+        }
+
+        .card {
+            position: relative;
+            width: 800px;
+            height: 450px;
+            background-color: #ffff00;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+            overflow: hidden;
+            margin-bottom: 15px;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: scale(1.05);
+        }
+
+        .card .img {
+            position: absolute;
+            top: 20px;
+            width: 500px;
+            height: 220px;
+            background-color: #33d;
+            border-radius: 12px;
+            transition: 0.5s;
+            overflow: hidden;
+        }
+
+        .card:hover .img {
+            top: -100px;
+            transform: scale(0.75);
+            box-shadow: 0 50px 80px rgba(0, 0, 0, 0.15);
+        }
+/* Add these styles to your existing CSS */
+
+.navbar input[type="text"] {
+    padding: 10px;
+    margin-right: 5px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.navbar input[type="text"]:focus {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+button {
+    padding: 10px 15px;
+    background-color: #555;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #777;
+}
+
+        .card .img img {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .card .content {
+            position: absolute;
+            width: 100%;
+            padding: 0 30px;
+            text-align: center;
+            top: 235px;
+            height: 40px;
+            overflow: hidden;
+            transition: 0.5s;
+        }
+
+        .card:hover .content {
+            top: 120px;
+            height: 250px;
+        }
+
+        .card .content h2 {
+            color: purple;
+            font-size: 1.5em;
+            font-weight: 900;
+        }
+
+        .card .content p {
+            color: #333;
+            font-size: 1.05em;
+        }
+
+        .card .content a {
+            position: relative;
+            top: 15px;
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #33d;
+            color: #ffff;
+            font-weight: 500;
+            text-decoration: none;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">
+            <img src="game-logo.jpeg" height="250px" width="250px" alt="Logo">
+        </div>
+        <div class="navbar">
+            <input type="text" placeholder="Search...">
+            <button type="submit">Search</button>
+        </div>
+    </header>
+
+    <div class="main-content">
+        <!-- First line of cards -->
+        <div class="card">
+            <div class="img">
+                <img src="flappy-bird.jpeg" alt="Image 1">
+            </div>
+            <div class="content">
+                <h2>Flappy Bird Adventure</h2>
+                <p>In Flappy Bird Adventure one takes on the role of a determined bird, skillfully guiding it through a maze of pipes with precise taps on the screen. The goal is to navigate as far as possible, 
+                    mastering the art of flight and avoiding obstacles to achieve a high score.</p>
+                <a href="https://aasthaa3.github.io/Flappy_Bird/">Play now</a>
+            </div>
+        </div>
+        <div class="card">
+            <div class="img">
+                <img src="candy-crush.jpeg" alt="Image 1">
+            </div>
+            <div class="content">
+                <h2>Candy Crush Bonanza</h2>
+                <p>A Candy Crush player becomes a confectionery maestro, strategically swapping and matching candies to solve puzzles and advance through the sugary landscapes. With each level presenting new challenges, 
+                    players exercise their puzzle-solving skills to conquer the vibrant Candy Crush universe..</p>
+                <a href="https://akankshagrahari.github.io/Candy_Crush/">Play now</a>
+            </div>
+        </div>
+
+        <!-- Second line of cards -->
+        <div class="card">
+            <div class="img">
+                <img src="maze.jpeg" alt="Image 1">
+            </div>
+            <div class="content">
+                <h2>Maze Explorer Challenge</h2>
+                <p>Maze Explore Challenger immerses players in a captivating adventure where they navigate intricate mazes, solving puzzles. With each twist and turn, players test their spatial awareness and 
+                    problem-solving skills, making the journey through the labyrinth a thrilling exploration.</p>
+                <a href="https://aayushi-sinha.github.io/Maze/">Play now</a>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="img">
+                <img src="coming soon.jpeg" alt="Image 1">
+            </div>
+            <div class="content">
+                <h2>Coming Up soon</h2>
+                <p>This is some text for Card 1.</p>
+                <a href="#">Coming soon</a>
+            </div>
+        </div>
+
+        <!-- Third line of cards -->
+      
+        
+
+      
+    </div>
+
+    <!-- Rest of your content goes here -->
+
+</body>
+
+</html>
+``

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to Game Topic</title>
+    <style>
+        body {
+            background-color: black;
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #loading-text {
+            position: absolute;
+            top: 50%;
+            left: 45%;
+            transform: translate(-50%, -50%);
+            font-family: Arial, sans-serif;
+            font-size: 80px;
+            font-weight: bold;
+            align-content: center;
+            color: #ccc;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+        }
+
+        #start-button {
+            position: absolute;
+            top: 60%;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #ffcc00;
+            color: black;
+            padding: 15px 30px;
+            font-size: 18px;
+            border: none;
+            cursor: pointer;
+            opacity: 0;
+            transition: opacity 1s ease-in-out;
+            text-decoration: none; /* Remove default underline for anchor tag */
+        }
+    </style>
+</head>
+<body>
+    <div id="loading-text">WELCOME TO GAME TOPIA</div>
+    <a href="mainpage.html" id="start-button">Start Game</a>
+
+    <script>
+        // Show the text and button with a delay
+        window.onload = function() {
+            setTimeout(function() {
+                document.getElementById('loading-text').style.opacity = 1;
+                document.getElementById('start-button').style.opacity = 1;
+            }, 1000); // 1000 milliseconds delay
+        }
+    </script>
+</body>
+</html>
